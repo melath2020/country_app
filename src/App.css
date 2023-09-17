@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(240, 241, 241);
+font-family: 'Poppins', sans-serif;
+}
+.container{
+  background-color: rgb(252, 254, 255);
+  
+}
+.scnd-txt{
+  font-size: 30px;
+  font-weight: 200;
+  color: rgb(90, 83, 83)
+}
+.third-txt{
+  font-size: 14px;
+  color: rgb(145, 145, 144);
+}
+
+/* 
+countrycard-section */
+.img-size{
+  width: 50px;
+  height: 40px;
+}
+.tble-txt{
+  color: rgb(255, 90, 8);
+}
