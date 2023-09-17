@@ -18,17 +18,15 @@ const CountryCard = () => {
   console.log(data);
   return (
     <>
-      <table class="table table-striped">
+      <table class="table table-striped p-5">
         <tbody>
           <tr>
             <th className="text-secondary">Si No</th>
             <th className="text-secondary">Country Name</th>
             <th className="text-secondary">Official Name</th>
             <th className="text-secondary">Flag</th>
-            <th className="text-secondary">Region</th>
-            <th className="text-secondary">Sub Region</th>
             <th className="text-secondary">Population</th>
-            <th className="text-secondary">Area</th>
+            
           </tr>
 
           {
@@ -43,10 +41,9 @@ const CountryCard = () => {
                 srcset=""
                 className="img-size"
               /></td>
-              <td>{d?.region}</td>
-              <td>{d?.subregion}</td>
+             
               <td>{d?.population}</td>
-              <td>{d?.area}</td>
+             
                 </tr>
             ))
           }
