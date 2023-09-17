@@ -3,7 +3,7 @@ import CountryListingPage from "./Pages/CountryListingPage";
 
 function App() {
   return (
-    <div className="mb-5">
+    <div className="mb-5 ">
       <CountryListingPage />
     </div>
   );
