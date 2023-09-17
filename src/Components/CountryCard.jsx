@@ -5,14 +5,14 @@ const CountryCard = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    const getProducts = async () => {
+    const getData = async () => {
       const responce = await axios.get("https://restcountries.com/v3.1/all");
 
       if (responce.data) {
         setData(responce.data);
       }
     };
-    getProducts();
+    getData();
   }, []);
 
   console.log(data);
@@ -25,30 +25,24 @@ const CountryCard = () => {
             <th className="text-secondary">Country Name</th>
             <th className="text-secondary">Official Name</th>
             <th className="text-secondary">Flag</th>
-            
-            
           </tr>
 
-          {
-           data && data?.map((d,i)=>(
-                <tr className="tble-txt"  key={i}>
-                    <td>{i+1}</td>
-                    <td>{d?.name?.common}</td>
-                    <td>{d?.name?.official}</td>
-                    <td><img
-                src={d?.flags?.png ? d?.flags?.png : d?.flags?.svg}
-                alt=""
-                srcset=""
-                className="img-size"
-              /></td>
-             
-             
-             
-                </tr>
-            ))
-          }
-
-        
+          {data &&
+            data?.map((d, i) => (
+              <tr className="tble-txt" key={i}>
+                <td>{i + 1}</td>
+                <td>{d?.name?.common}</td>
+                <td>{d?.name?.official}</td>
+                <td>
+                  <img
+                    src={d?.flags?.png ? d?.flags?.png : d?.flags?.svg}
+                    alt=""
+                    srcset=""
+                    className="img-size"
+                  />
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </>

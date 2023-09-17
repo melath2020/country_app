@@ -1,11 +1,10 @@
-
-import './App.css';
-import CountryListingPage from './Pages/CountryListingPage';
+import "./App.css";
+import CountryListingPage from "./Pages/CountryListingPage";
 
 function App() {
   return (
     <div className="mb-5">
-     <CountryListingPage/>
+      <CountryListingPage />
     </div>
   );
 }
