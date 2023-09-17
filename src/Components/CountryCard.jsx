@@ -25,7 +25,7 @@ const CountryCard = () => {
             <th className="text-secondary">Country Name</th>
             <th className="text-secondary">Official Name</th>
             <th className="text-secondary">Flag</th>
-            <th className="text-secondary">Population</th>
+            
             
           </tr>
 
@@ -42,7 +42,7 @@ const CountryCard = () => {
                 className="img-size"
               /></td>
              
-              <td>{d?.population}</td>
+             
              
                 </tr>
             ))
